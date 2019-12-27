@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+    
+<body class="royal_preloader">	
+	
+	<div id="royal_preloader"></div>
+
+	
+	<!-- Nav and Logo
+	================================================== -->
+
+		
+	<!-- Nav and Logo
+	================================================== -->
+
+		{% include menu.html %}	
+	
+	<!-- Primary Page Layout
+	================================================== -->
+
+		<main>
+            {% if page.url contains 'zonetalks' %}
+			<nav class="menu">
+				<div class="menu__item">
+					<span class="menu__item-textwrap"><span class="menu__item-text">Zone.Talks</span></span>
+					<a class="menu__item-link">explore o espaço de especialistas</a>
+				</div>
+			</nav>
+			<div class="page page--preview">
+				<div class="gridwrap">
+					<div id ="lilothink" class="grid grid--layout-3">
+						{% for zonetalks in site.data.zonetalks %}
+						<a href="{{zonetalks.url}}.html" class="grid__item tipped" data-title="<em>{{zonetalks.subtitulo}}</em><strong>{{zonetalks.titulo}}</strong>" data-tipper-options='{"direction":"bottom","follow":"true","margin":25}' style="background-image: url(img/{{zonetalks.foto1}}.jpg)"><div class="grid-item-mask"></div></a>
+                        {% endfor %}
+					</div>
+<!--					<button class="gridback"><span>voltar</span></button>-->
+				</div><!-- /gridwrap -->
+				<div class="content">
+					<div class="content__item">
+						<p class="lead">Zone Talks traz ao público conversas espontâneas entre especialistas da comunidade do LILO.ZONE que trabalham com prototipagem, computação física, interatividade, etc. Aborda questões do seu cotidiano profissional e reflexões acerca do mercado de inovação.</p>
+						<div class="container padding-top-big padding-bottom">
+							<div class="row">
+								<div class="col-md-12 footer">
+									<p>2019 zucchini.video</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /page -->
+            {% endif %}
+            
+            {% if page.url contains 'preludios' %}
+			<nav class="menu">
+				<div class="menu__item">
+					<span class="menu__item-textwrap"><span class="menu__item-text">Pré-lúdios</span></span>
+					<a class="menu__item-link">explore projetos antigos</a>
+				</div>
+			</nav>
+			<div class="page page--preview">
+				<div class="gridwrap">
+					<div id ="lilothink" class="grid grid--layout-3">
+						{% for preludios in site.data.preludios %}
+						<a href="{{preludios.url}}.html" class="grid__item tipped" data-title="<em>{{preludios.subtitulo}}</em><strong>{{preludios.titulo}}</strong>" data-tipper-options='{"direction":"bottom","follow":"true","margin":25}' style="background-image: url(img/{{preludios.foto1}}.jpg)"><div class="grid-item-mask"></div></a>
+                        {% endfor %}
+					</div>
+<!--					<button class="gridback"><span>voltar</span></button>-->
+				</div><!-- /gridwrap -->
+				<div class="content">
+					<div class="content__item">
+						<p class="lead">Pre-ludios é uma série que percorre as trajetórias experimentais da artista Lina Lopes e seus colaboradores antes da criação do LILO.THINK. Explora os desafios e as soluções criativas em projetos interativos de arte e tecnologia.</p>
+						<div class="container padding-top-big padding-bottom">
+							<div class="row">
+								<div class="col-md-12 footer">
+									<p>2019 zucchini.video</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /page -->
+            {% endif %}
+            
+            {% if page.url contains 'lilothink' %}
+			<nav class="menu">
+				<div class="menu__item">
+					<span class="menu__item-textwrap"><span class="menu__item-text">LILO.THINK</span></span>
+					<a class="menu__item-link">explore a nova metodologia</a>
+				</div>
+			</nav>
+			<div class="page page--preview">
+				<div class="gridwrap">
+					<div id ="lilothink" class="grid grid--layout-3">
+						{% for lilothink in site.data.lilothink %}
+						<a href="{{lilothink.url}}.html" class="grid__item tipped" data-title="<em>{{lilothink.subtitulo}}</em><strong>{{lilothink.titulo}}</strong>" data-tipper-options='{"direction":"bottom","follow":"true","margin":25}' style="background-image: url(img/{{lilothink.foto1}}.jpg)"><div class="grid-item-mask"></div></a>
+                        {% endfor %}
+					</div>
+<!--					<button class="gridback"><span>voltar</span></button>-->
+				</div><!-- /gridwrap -->
+				<div class="content">
+					<div class="content__item">
+						<p class="lead">LILO.THINK é uma consultoria de processos imersivos em que profissionais criativos realizam protótipos. É um espaço de experimentar e criar projetos com foco em tecnologia. É onde arte e técnica se misturam de forma sinestésica.</p>
+						<div class="container padding-top-big padding-bottom">
+							<div class="row">
+								<div class="col-md-12 footer">
+									<p>2019 zucchini.video</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /page -->
+            {% endif %}
+		</main>
+
+	
+	<!-- JAVASCRIPT
+    ================================================== -->
+	<script src="js/jquery.min.js"></script>
+        <!-- Bootstrap 4.3.1 JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="js/royal_preloader.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script> 
+        <script src="js/animated-grid-portfolio.js"></script>  
+        <script src="js/custom.js"></script>  
+<!-- End Document
+================================================== -->
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <title>zucchini.video</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/favicon.png" type="image/x-icon">
+        <!-- Bootstrap 4.3.1 CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Slick 1.8.1 jQuery plugin CSS (Sliders) -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Fancybox 3 jQuery plugin CSS (Open images and video in popup) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <!-- AOS 2.3.4 jQuery plugin CSS (Animations) -->
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- Startup 3 CSS (Styles for all blocks) -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- jQuery 3.3.1 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head> 
+    <body>
+        <!-- Navigation Mobile type 2 -->
+
+        <a class="open_menu color-main bg-light radius_full"><i class="fas fa-bars lh-40"></i></a>
+        <div class="navigation_mobile bg-light type2">
+            <a class="close_menu color-main"><i class="fas fa-times"></i></a>
+            <div class="px-40 pt-60 pb-60 text-center inner">
+
+                <div><a href="#" class="f-heading f-22 link color-main mb-20">Home</a></div>
+
+                <div><a href="#sobre" class="f-heading f-22 link color-main mb-20">{{page.menuSobre}}</a></div>
+
+                <div><a href="#programas" class="f-heading f-22 link color-main mb-20">{{page.menuProgramas}}</a></div>
+
+                <div><a href="#cursos" class="f-heading f-22 link color-main mb-20">{{page.menuCursosonline}}</a></div>
+
+                <div><a href="#equipe" class="f-heading f-22 link color-main mb-20">{{page.menuEquipe}}</a></div>
+
+                <div><a href="#contato" class="f-heading f-22 link color-main mb-20">{{page.menuContato}}</a></div>
+                
+                <div><a href="#" class="f-12 link color-main op-7 text-uppercase sp-20 mb-20">LILO.ZONE</a></div>
+                <div><a href="#" class="f-12 link color-main op-7 text-uppercase sp-20 mb-20">LILO.Academy</a></div>
+                <div><a href="#" class="f-12 link color-main op-7 text-uppercase sp-20 mb-20">Blog</a></div>
+                <div class="socials mt-60">
+                    <a href="linkZone" target="_blank" class="link color-main f-18 mx-10"><i class="fab fa-facebook"></i></a>
+                    <a href="linkAcademy" target="_blank" class="link color-main f-18 mx-10"><i class="fab fa-instagram"></i></a>
+                    <a href="linkBlog" target="_blank" class="link color-main f-18 mx-10"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>	
+        <!-- Header 6 -->
+
+        <header class="pt-175 pb-110 bg-dark color-filter-dark-5 header_6">
+            <style>
+                .header_6{background-image:url(img/logos/zucchini.video_flor.png);}
+                @media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+                    .header_6{background-image:url(img/logos/zucchini.video_flor.png);}
+                }
+            </style>
+
+            <!-- Header Menu 6 -->
+
+            <nav class="header_menu_6 pt-30 pb-30 mt-30">
+                <div class="container mw-970 px-xl-0">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-5 d-flex align-items-center" data-aos-duration="600" data-aos="fade-down" data-aos-delay="1200">
+                            <a href="#programas" class="link color-white f-18 bold mr-30">{{page.menuProgramas}}</a>
+                            <a href="#equipe" class="link color-white f-18 bold mr-30">{{page.menuEquipe}}</a>
+                            <a href="#contato" class="link color-white f-18 bold">{{page.menuContato}}</a>
+                        </div>
+                        <div class="col-lg-2 text-center logo color-white" data-aos-duration="600" data-aos="fade-down" data-aos-delay="900"><h5>zucchini.video</h5></div>
+                        <div class="col-lg-5 d-flex justify-content-end align-items-center" data-aos-duration="600" data-aos="fade-down" data-aos-delay="1200">
+                            <a href="index.html" class="btn sm action-1 mr-10">PT</a>
+                            <a href="en.html" class="btn sm action-1">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container px-xl-0 text-center">
+                <div class="mb-3 logo d-block d-xl-none color-white logo_mobile">zucchini.video</div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <h1 class="action-3">{{page.headerFrase}}</h1>
+                    </div>
+                    <div class="col-lg-12 relative h-70 mt-80 mb-70 btn_holder" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <a href="https://www.youtube.com/embed/RcTFVcoibI0?rel=0&showinfo=0" target="_blank" class="btn red play" data-fancybox="header_6_fancybox"><i class="fas fa-play"></i></a>
+                    </div>
+<!--
+                    <div class="col-md-6 color-white f-22 bold text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                        Construir, colaborar e compartilhar
+                    </div>
+-->
+                </div>
+            </div>
+        </header>
+
+        <section id="sobre" class="pt-100 pb-100 bg-dark color-filter-dark-8 content_17">	
+            <style>
+                .content_17{background-image:url(img/textura1.png);}
+                @media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+                    .content_17{background-image:url(img/content_17_bg@2x.jpg);}
+                }
+            </style>
+            <div class="container px-xl-0">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="row flex-md-row-reverse justify-content-md-end">
+                            <div class="col-lg-4 col-md-6 bg-light radius20 pt-40 pb-40 px-40 mx-15 mx-sm-0 block_tip" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                                <div class="text-center action-2 f-22 text-adaptive color-main">
+                                   <h3>{{page.sobreConstruir}}<br/> {{page.sobreColaborar}} <br/>{{page.sobreCompartilhar}}</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-6 color-white mt-4 mt-lg-0" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                                <h2 class="f-20 semibold">{{page.manifestoTitulo}}</h2>
+                                <div class="mt-15 f-18 medium op-7 text-adaptive">
+                                    {{page.manifestoTexto}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Showcase 10 -->
+
+        <section id="programas" class="pt-100 pb-95 bg-action-1 showcase_10">
+            <div class="container px-xl-0">
+                <div class="row justify-content-center align-items-center align-items-lg-end text-center">
+                    <div class="col-md-8 col-sm-7 text-sm-left" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <h2 class="small">{{page.programasTitulo}}</h2>
+                    </div>
+                    <!--
+<div class="col-md-4 col-sm-5 text-sm-right" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+<a href="#" class="mt-20 mt-sm-0 btn size50 border-gray color-main">Explore Showcase</a>
+</div>
+-->
+                </div>
+                <div class="mt-40 row align-items-stretch">
+                    <div class="mb-30 col-md-6" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <div class="h-full radius10 pt-55 pb-50 bg-gray">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-9 col-10">
+                                    <div class="mb-15 f-22 title"><h5>{{page.zonetalks}}</h5></div>
+                                    <div class="text-adaptive">
+                                        {{page.zonetalksTexto}}
+                                    </div>
+                                    <a href="zonetalks.html" class="mt-40 btn sm action-white f-16"><span class="color-main">Explore</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-30 col-md-6" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <div class="h-full radius10 pt-55 pb-50 bg-action-2 color-white">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-9 col-10">
+                                    <div class="mb-15 f-22 title"><h5>{{page.preludios}}</h5></div>
+                                    <div class="text-adaptive">
+                                       {{page.preludiosTexto}}
+                                    </div>
+                                    <a href="preludios.html" class="mt-40 btn sm action-white f-16"><span class="color-main">Explore</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        #showcase_10_block_4{
+                            background-image: url(img/lilothink.png);
+                            background-position: 50% 50%;
+                            background-size:cover;
+                        }
+                        @media(-webkit-min-device-pixel-ratio: 1.25), not all, (min-resolution: 120dpi){
+                            #showcase_10_block_4{
+                                background-image:url(img/lilothink.png);
+                            }
+                        }
+                    </style>
+                    <div class="col-md-6" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <div class="h-full radius10 pt-55 pb-50 color-white bg-dark" id="showcase_10_block_4">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-9 col-10">
+                                    <div class="mb-15 f-22 title"><h5>{{page.lilothink}}</h5></div>
+                                    <div class="text-adaptive">
+                                        {{page.lilothinkTexto}}	
+                                    </div>
+                                    <a href="lilothink.html" class="mt-40 btn sm action-white f-16"><span class="color-main">Explore</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-30 mb-md-0 col-md-6" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <div class="h-full radius10 pt-55 pb-50 with_border">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-9 col-10">
+                                    <div class="mb-15 f-22 title"><h5>{{page.maisSobre}}</h5></div>
+                                    <div class="text-adaptive">
+                                        {{page.maisSobreTexto}}	
+                                    </div>
+                                    <a href="{{page.linkPPT}}" target="_blank" class="mt-40 btn sm action-1 f-16">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section id="cursos" class="pt-85 pb-85 bg-dark color-main color-filter-dark-2 ecommerce_17">
+            <style>
+                .ecommerce_17{background-image:url(img/textura1.png);}
+                @media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+                    .ecommerce_17{background-image:url(img/textura1.png);}
+                }
+            </style>
+            <div class="container px-xl-0 pb-85">
+                <div class="row align-items-center">
+                    <div class="col-lg-1"></div>
+                    <div class="col-xl-2 col-md-3" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <img src="img/logos/zucchini.video_horizontal.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="col-xl-7 col-lg-8 col-md-9 mt-4 mt-md-0">
+                        <h2 class="pl-15 small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">{{page.cursosTitulo}}</h2>
+                        <div class="mt-15 pl-15 f-18 bold color-main op-7 text-adaptive">
+                            <span data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">					
+                                {{page.cursosTexto}}
+                            </span>					
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-xl-0">
+                <div class="row justify-content-center justify-content-md-start">
+                    <div class="mt-15 mb-15 col-md-4 col-sm-8 product" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <div class="relative holder">
+                            <img src="img/orquestra_1_capa.jpg" class="w-full radius10" alt="" />
+                            <div class="absolute w-full h-full op-0 radius10 d-flex flex-column align-items-center justify-content-center inner">
+                                <div class="mw-180">
+                                    <div class="mb-1 f-22 semibold title">Orquestra Simbiótica</div>
+                                    <div class="op-7 text-adaptive">Seja coautor de uma obra de arte biológico-digital. Uma vivência única que conecta arte, ciência e tecnologia. </div>
+                                    <a href="#" class="mt-35 btn sm action-3 medium">Em breve</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-15 mb-15 col-md-4 col-sm-8 product" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <div class="relative holder">
+                            <img src="img/orquestra_1_capa.jpg" class="w-full radius10" alt="" />
+                            <div class="absolute w-full h-full op-0 radius10 d-flex flex-column align-items-center justify-content-center inner">
+                                <div class="mw-180">
+                                    <div class="mb-1 f-22 semibold title">Repositório Good Vibes</div>
+                                    <div class="op-7 text-adaptive">Não sabe o que fazer com o seu vibrador quebrado?</div>
+                                    <a href="#" class="mt-35 btn sm action-3 medium">Em breve</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-15 mb-15 col-md-4 col-sm-8 product" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                        <div class="relative holder">
+                            <img src="img/orquestra_1_capa.jpg" class="w-full radius10" alt="" />
+                            <div class="absolute w-full h-full op-0 radius10 d-flex flex-column align-items-center justify-content-center inner">
+                                <div class="mw-180">
+                                    <div class="mb-1 f-22 semibold title">O fantástico livro do videomapping em fascículos</div>
+                                    <div class="op-7 text-adaptive">Mais que um livro de videomapping, um livro com mapping...</div>
+                                    <a href="#" class="mt-35 btn sm action-3 medium">Em breve</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Team 3 -->
+
+        <section id="equipe" class="pt-105 pb-100 bg-dark color-white text-center team_3">
+            <div class="container px-xl-0">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-sm-11" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <h2 class="small">{{page.equipeFrase}}</h2>
+                    </div>
+                </div>
+                <div class="mt-15 row justify-content-center">
+                    <div href="#" target="_blank" class="mt-50 col-lg-3 col-md-5 col-sm-6 link color-white">
+                        <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                            <img src="img/team/lina.jpg" class="radius10 img-fluid" alt="" />
+                            <div class="mt-20 mb-10 f-22 title">{{page.equipeNome1}}</div>
+                            <div class="f-14 semibold text-uppercase sp-20 color-heading">{{page.equipeTag1}}</div>
+                        </div>
+                    </div>
+                    <div href="#" target="_blank" class="mt-50 col-lg-3 col-md-5 col-sm-6 link color-white">
+                        <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                            <img src="img/team/nathan.jpg" class="radius10 img-fluid" alt="" />
+                            <div class="mt-20 mb-10 f-22 title">{{page.equipeNome2}}</div>
+                            <div class="f-14 semibold text-uppercase sp-20 color-heading">{{page.equipeTag2}}</div>
+                        </div>
+                    </div>
+                    <div href="#" target="_blank" class="mt-50 col-lg-3 col-md-5 col-sm-6 link color-white">
+                        <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                            <img src="img/team/lidia.jpg" class="radius10 img-fluid" alt="" />
+                            <div class="mt-20 mb-10 f-22 title">{{page.equipeNome3}}</div>
+                            <div class="f-14 semibold text-uppercase sp-20 color-heading">{{page.equipeTag3}}</div>
+                        </div>
+                    </div>
+                    <div href="#" target="_blank" class="mt-50 col-lg-3 col-md-5 col-sm-6 link color-white">
+                        <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="900">
+                            <img src="img/team/susan.jpg" class="radius10 img-fluid" alt="" />
+                            <div class="mt-20 mb-10 f-22 title">{{page.equipeNome4}}</div>
+                            <div class="f-14 semibold text-uppercase sp-20 color-heading">{{page.equipeTag4}}</div>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+        </section>
+
+        <!-- Contact  -->
+
+        <section id="contato" class="pt-95 pb-80 bg-dark relative color-white text-center contact_9">
+            <div class="absolute w-full h-full js-google-map" 
+                 data-coords="-23.5498577,-46.6865385"
+                 data-zoom="14"
+                 ></div>
+            <div class="absolute w-full h-full map_overlay"></div>
+            <div class="container px-xl-0">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-8">
+                        <div class="f-main f-24 bold action-3" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">zucchini.video</div>
+                        <div class="mt-20 mb-80 f-22 text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                            {{page.contatoFrase}}
+                        </div>
+                        <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                            <div class="mb-10 f-14 semibold text-uppercase sp-20 title">E-mail</div>
+                            <a href="mailto:zucchini@lilo.zone" class="mb-60 f-42 bold link color-white text_big">zucchini@lilo.zone</a>
+                        </div>
+                        <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                            <div class="mb-20 f-14 semibold text-uppercase sp-20 title">Socials</div>
+                            <a href="#" target="_blank" class="mb-20 f-26 link color-white mx-20"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" target="_blank" class="mb-20 f-26 link color-white mx-20"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" class="mb-20 f-26 link color-white mx-20"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- forms alerts -->
+        <div class="alert alert-success alert-dismissible fixed-top alert-form-success" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Thanks for your message!
+        </div>
+        <div class="alert alert-warning alert-dismissible fixed-top alert-form-check-fields" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Please, fill in required fields.
+        </div>
+        <div class="alert alert-danger alert-dismissible fixed-top alert-form-error" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            An error occurred while sending data :(
+        </div>
+
+        <!-- Bootstrap 4.3.1 JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!-- Google maps JS API -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+        <!-- Slick 1.8.1 jQuery plugin JS (Sliders) -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- AOS 2.3.4 jQuery plugin JS (Animations) -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <!-- Startup 3 JS (Custom js for all blocks) -->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
