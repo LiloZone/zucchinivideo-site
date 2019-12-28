@@ -63,9 +63,12 @@ nav.transparent {
 a, button {
   cursor: pointer;
   transition: all 0.25s;
+    color: #970da3;
 }
 a:hover, button:hover {
   text-decoration: none;
+    color: #f94a41;
+    
 }
 a:active, a:focus, button:active, button:focus {
   text-decoration: none;
