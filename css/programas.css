@@ -1091,8 +1091,10 @@ main {
     max-width: 600px;
     margin: 0 auto;
     padding: 1.5rem;
+/*
     margin-bottom: 0;
     padding-bottom: 0;
+*/
 }
 
 .content__item--current {
@@ -1371,7 +1373,7 @@ figure.vimeo a img, figure.youtube a img {
     margin-right:30px;
     width:220px;
     height:80px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'News Gothic', sans-serif;
     letter-spacing:2px;
     text-align:right;
     font-size: 50px;
@@ -1396,7 +1398,7 @@ figure.vimeo a img, figure.youtube a img {
     font-size: 50px;
     line-height:80px;
     vertical-align: text-bottom;
-    font-family: 'News Gothic';
+    font-family: 'News Gothic', sans-serif;
     letter-spacing:2px;
     text-align:left;
     color:#999;
@@ -1415,7 +1417,7 @@ figure.vimeo a img, figure.youtube a img {
     z-index:2;
     width:100%;
     opacity:0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'News Gothic', sans-serif;
     font-weight:400;
     font-size: 13px;
     line-height:20px;
@@ -2419,4 +2421,13 @@ figure.vimeo a img, figure.youtube a img {
 
             @media (max-width: 575px) {
             }
+
+
+
+
+
+
+
+
+
 
